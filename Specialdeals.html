@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special deals</title>
+</head>
+<body>
+     <header class="main-header">
+    <img src="images and assets/batman.png" alt="Second Wave Mobile Logo" class="logo">
+
+    <h1>Special deals</h1>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search phones...">
+    </div>
+
+    <nav>
+        <a href="Homepage.html">Home</a>
+        <a href="Specialdeals.html">Special Deals</a>
+        <a href="Productionandservices.html">Production and services</a>
+        <a href="Customerreview.html">Customer Reviews and contact us</a>
+    </nav>
+</header>
+
+<style>
+.main-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.main-header h1 {
+    color: #00A86B; /* green */
+}
+
+/* SEARCH BAR */
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00A86B;
+}
+</style>
+        <hr>
+        <main>
+        <section class="deals">
+    <h2> Special Deals</h2>
+
+    <div class="gallery">
+        
+        <!-- Added the image, heading, paragraph tags and links -->
+        <div class="item">
+            <img src="images and assets/iphone + watch.avif " alt="iPhone" >
+            <h3>iPhone Combo</h3>
+            <p>iPhone + Smart Watch</p>
+            <p class="price">R8 999</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        
+        <div class="item">
+            <img src="images and assets/samsung and buds.webp" alt="Samsung Phone">
+            <h3>Samsung Combo</h3>
+            <p>Samsung + Earbuds</p>
+            <p class="price">R6 499</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        
+        <div class="item">
+            <img src="images and assets/laptop.webp" alt="Laptop">
+            <h3>Laptop Deal</h3>
+            <p>Refurbished Laptop</p>
+            <p class="price">R5 999</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        
+        <div class="item">
+            <img src="images and assets/watch.webp" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+            <p>Fitness Smart Watch</p>
+            <p class="price">R1 499</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        
+        <div class="item">
+            <img src="images and assets/iphone 11.jpeg" alt="iPhone">
+            <h3>iPhone Budget</h3>
+            <p>Pre-owned iPhone</p>
+            <p class="price">R4 999</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        
+        <div class="item">
+            <img src="images and assets/galaxy.webp" alt="Samsung">
+            <h3>Samsung Budget</h3>
+            <p>Pre-owned Samsung</p>
+            <p class="price">R3 999</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.deals {
+    padding: 20px;
+    text-align: center;
+}
+
+.deals h2 {
+    color: #00A86B;
+}
+
+/* GRID LAYOUT */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* ITEM CARD */
+.item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.price {
+    color: #00A86B;
+    font-weight: bold;
+}
+.btn {
+    display: inline-block;
+    background-color: #00A86B;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: black;
+}
+</style>
+</main>
+<hr>
+   <!-- FOOTER -->
+    <footer>
+       
+         <center><!--i aligned it to centre-->
+            <p>Copyright &copy; 2026 - &amp;Developed by  <b>Xolani khambule</b></p>
+             <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
+        </center>
+    </footer>
+    
+</body>
+</html>

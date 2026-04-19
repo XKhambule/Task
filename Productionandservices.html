@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production and services</title>
+</head>
+<body>
+     <header class="main-header"><!--Added a logo-->
+    <img src="images and assets/batman.png" alt="Second Wave Mobile Logo" class="logo">
+
+    <h1>Production and services</h1><!--added heading-->
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search phones..." id="searchinput">
+    </div>
+
+    <nav><!--navigations-->
+        <a href="Homepage.html">Home</a>
+        <a href="Specialdeals.html">Special Deals</a>
+        <a href="Productionandservices.html">Production and services</a>
+        <a href="Customerreview.html">Customer Reviews and contact us</a>
+    </nav>
+</header>
+
+<style>
+.main-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.main-header h1 {
+    color: #00A86B; /* green */
+}
+
+/* SEARCH BAR */
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00A86B;
+}
+</style>
+        <hr>
+        <main>
+        <section class="Products">
+    <h2> Our Products</h2>
+<!--Added image,heading,paragraph and links-->
+    <div class="gallery">
+
+        <div class="card">
+            <img src="images and assets/Z flip.jpeg" alt="Samsung Z Flip">
+            <h3>Samsung Z Flip</h3>
+            <p class="price">R9 000</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/13.jpeg" alt="iPhone 13">
+            <h3>iPhone 13</h3>
+            <p class="price">R6 600</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/iphine 12.jpeg" alt="iPhone 12">
+            <h3>iPhone 12</h3>
+            <p class="price">R5 499</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/iphone 11.jpeg" alt="iPhone 11">
+            <h3>iPhone 11</h3>
+            <p class="price">R4 500</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/Iphone 15.jpeg" alt="iPhone 15">
+            <h3>iPhone 15</h3>
+            <p class="price">R10 500</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/Iphone 16 plus.jpeg" alt="iPhone 16">
+            <h3>iPhone 16</h3>
+            <p class="price">R13 300</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/iphone17.jpeg" alt="iPhone 17">
+            <h3>iPhone 17</h3>
+            <p class="price">R15 200</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/25.jpeg" alt="Samsung S25 Ultra">
+            <h3>Samsung S25 Ultra</h3>
+            <p class="price">R12 400</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/26.jpeg" alt="Samsung S26">
+            <h3>Samsung S26</h3>
+            <p class="price">R14 200</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/Honor x9c.jpeg" alt="Honor X9C">
+            <h3>Honor X9C</h3>
+            <p class="price">R5 200</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/Mac book air.jpeg" alt="MacBook Air">
+            <h3>MacBook Air</h3>
+            <p class="price">R10 200</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="images and assets/mac book neo.jpeg" alt="MacBook Neo">
+            <h3>MacBook Neo</h3>
+            <p class="price">R11 200</p>
+            <a href="CART.html" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.Products {
+    padding: 20px;
+    text-align: center;
+}
+
+.Products h2 {
+    color: #00A86B;
+}
+
+/* SAME STYLE AS SPECIAL DEALS */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* CARD DESIGN */
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.price {
+    color: #00A86B;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00A86B;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: black;
+}
+</style>
+
+         <!--created a list-->
+            <ul id="itemList">
+                <li>Iphone</li>
+                <li>samsung</li>
+                <li>Mac books</li>
+                <li>other phones</li>
+            </ul>
+            </main>
+            <hr>
+             <!-- FOOTER -->
+    <footer>
+       
+         <center>
+            <p>Copyright &copy; 2026 - &amp;Developed by  <b>Xolani khambule</b></p>
+             <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
+        </center>
+    </footer>
+    
+</body>
+</html>
