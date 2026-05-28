@@ -1,9 +1,533 @@
-.search {
-    width: max-content;
+                /* Added the font-family */                                                      /* This is the Home page */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */ /*Display, align-items added and justify content */
+/* color, background-color*/
+header {
+    background-color: black;
+    color: white;
     display: flex;
     align-items: center;
-    padding: 14px;
-    border-radius: 28px;
-    background: #f6f6f6;
-    
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
 }
+
+.logo {
+    width: 8%;
+}
+
+/* SEARCH BAR */
+.search-bar input {
+    padding: 0.3125rem;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    margin: 0 0.625rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #00A86B;
+}
+
+/* HERO SECTION */
+/* Added responsive image techniques using image-set() */
+.hero {
+
+    /* Default responsive image */
+    background-image: image-set(
+        url("phones-small.jpg") 1x,
+        url("phones-large.jpg") 2x
+    );
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 50vh;
+
+    color: white;
+    text-align: center;
+
+    padding-top: 10%;
+}
+
+/* Added the font size */
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* color, background-color*/
+.btn {
+    background-color: #00A86B;
+    color: white;
+    padding: 0.625rem 1.25rem;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+}
+
+/* CONTENT */
+.content {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+/* FOOTER */ /* color, background-color*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.625rem;
+}
+
+/* Display , align-items added and Justify-content added */
+/* This is the About us page */
+.main-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+}
+
+.logo {
+    width: 8%;
+}
+
+.main-header h1 {
+    color: #00A86B;
+}
+
+/* SEARCH BAR */
+.search-bar input {
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    border: none;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    margin: 0 0.625rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #00A86B;
+}
+
+/* This is the special deals page */
+.deals {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.deals h2 {
+    color: #00A86B;
+}
+
+/* GRID LAYOUT */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+/* ITEM CARD */
+.item {
+    background-color: white;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    box-shadow: 0rem 0rem 0.625rem grey;
+}
+
+/* Added responsive image sizing */
+.item img {
+
+    /* Responsive width */
+    width: 80%;
+
+    /* Responsive height */
+    height: auto;
+
+    object-fit: cover;
+}
+
+/* Added the font-weight*/
+.price {
+    color: #00A86B;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00A86B;
+    color: white;
+    padding: 0.5rem 0.9375rem;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+                                                /* Production and services page */
+.main-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+}
+
+.logo {
+    width: 8%;
+}
+
+.main-header h1 {
+    color: #00A86B;
+}
+
+/* SEARCH BAR */
+.search-bar input {
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    border: none;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    margin: 0 0.625rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00A86B;
+}
+
+.Products {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.Products h2 {
+    color: #00A86B;
+}
+
+/* SAME STYLE AS SPECIAL DEALS */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+/* CARD DESIGN */
+.card {
+    background-color: white;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+    box-shadow: 0rem 0rem 0.625rem grey;
+}
+
+/* Added responsive image sizing */
+.card img {
+
+    /* Responsive width */
+    width: 80%;
+
+    /* Responsive height */
+    height: auto;
+
+    object-fit: cover;
+}
+
+.price {
+    color: #00A86B;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00A86B;
+    color: white;
+    padding: 0.5rem 0.9375rem;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+/* This is the cart page */
+
+.main-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+}
+
+.logo {
+    width: 8%;
+}
+
+.main-header h1 {
+    color: #00A86B;
+}
+
+/* SEARCH BAR */
+.search-bar input {
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    border: none;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    margin: 0 0.625rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00A86B;
+}
+
+/* This is the customer review page */
+
+.main-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+}
+
+.logo {
+    width: 8%;
+}
+
+.main-header h1 {
+    color: #00A86B;
+}
+
+/* SEARCH BAR */
+.search-bar input {
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    border: none;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    margin: 0 0.625rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00A86B;
+}
+
+/* DESKTOP STYLES Large Screens (1024px and above) */
+
+.content,
+.Products,
+.deals {
+    padding: 1.25rem;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.125rem;
+    margin: 0 0.9375rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* Added desktop responsive image */
+@media screen and (min-width: 1024px) {
+
+    .hero {
+        background-image: image-set(
+            url("phones-large.jpg") 1x,
+            url("phones-hd.jpg") 2x
+        );
+    }
+
+    .item img,
+    .card img {
+        width: 70%;
+    }
+}
+
+/* TABLET BREAKPOINT 768px - 1023px */
+
+@media screen and (max-width: 1023px) {
+
+    /* Added tablet responsive image */
+    .hero {
+        background-image: image-set(
+            url("phones-medium.jpg") 1x,
+            url("phones-medium-hd.jpg") 2x
+        );
+    }
+
+    /* CONTENT LAYOUT */
+    .content,
+    .Products,
+    .deals {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /* HEADER LAYOUT */
+    header,
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* NAVIGATION */
+    nav {
+        margin-top: 0.625rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0.3125rem 0.625rem;
+    }
+
+    /* HERO TEXT */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* GALLERY LAYOUT */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item img,
+    .card img {
+        width: 80%;
+    }
+}
+
+/* MOBILE BREAKPOINT 767px and below */
+
+@media screen and (max-width: 767px) {
+
+    /* Added mobile responsive image */
+    .hero {
+        background-image: image-set(
+            url("phones-small.jpg") 1x,
+            url("phones-small-hd.jpg") 2x
+        );
+
+        height: 35vh;
+    }
+
+    /* CONTENT LAYOUT */
+    .content,
+    .Products,
+    .deals {
+        padding: 0.625rem;
+        font-size: 0.875rem;
+    }
+
+    /* HEADER */
+    header,
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.9375rem;
+    }
+
+    /* NAVIGATION */
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        margin-top: 0.625rem;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+        margin: 0;
+    }
+
+    /* HERO TEXT */
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    /* SINGLE COLUMN LAYOUT */
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    /* BUTTON */
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+
+    .item img,
+    .card img {
+        width: 90%;
+    }
+}
+
+
+
+/*
+
+Responsive Image Techniques Used:
+
+1. image-set()
+- Loads different image resolutions depending on device quality.
+
+2. Media Queries
+- Loads different images for desktop, tablet and mobile screens.
+
+3. width: %
+- Makes images responsive.
+
+4. height: auto
+- Maintains correct image proportions.
+
+Benefits:
+- Faster loading
+- Better image quality
+- Optimised responsiveness
+- Improved performance
+
+*/
