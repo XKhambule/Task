@@ -17,6 +17,7 @@ for the laptop/Desktop:
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/54d26319-343d-4adb-b9d6-3a7ecfa12125" />
 Refences from how i did the code
 Battersby, D. (2021) Responsive Design Example & CSS Media Query Tutorial. Available at: https://www.youtube.com/watch?v=91bYBUojyNk
+
 Mobile layout changes
 Tablet layout changes
 Respnsive image changes
