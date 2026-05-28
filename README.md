@@ -8,7 +8,7 @@ My first commit Refences
    img by Apple Inc.,n.d. (Accessed: 20 April 2026). MacBook Air.Available at: https://www.apple.com/shop/buy-mac/macbook-air
    img by Amazon (2023). Apple iPhone 15 128GB image. Available at: https://www.amazon.co.za/Apple-iPhone-15-128-GB/dp/B0CZJTQHKG
 
-Part 2
+ Updated folder for Part 2 Adding CSS
 for the mobile:
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/dee7faf7-2d21-48df-a1d9-e7500d222d4b" />
 for the tablet:
