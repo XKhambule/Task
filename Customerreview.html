@@ -5,68 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer review</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/review.js"></script>
 </head>
+
 <body>
-      <header class="main-header">
+
+<header class="main-header">
     <img src="images and assets/batman.png" alt="Second Wave Mobile Logo" class="logo">
 
-    <h1>Customer review and contact us</h1>
+    <h1>Customer Reviews & Contact Us</h1>
 
-    <!-- SEARCH BAR -->
     <div class="search-bar">
         <input type="text" placeholder="Search phones...">
     </div>
 
-    <nav><!--Added link>-->
-        <a href="Homepage.html">Home</a>
+    <nav>
+        <a href="Index.html">Home</a>
         <a href="Aboutus.html">About Us</a>
         <a href="Specialdeals.html">Special Deals</a>
         <a href="Productionandservices.html">Production and services</a>
-        <a href="Customerreview.html">Customer Reviews and contact us</a>
+        <a href="Customerreview.html">Customer Reviews</a>
     </nav>
 </header>
 
+<hr>
 
-        <hr>
-        <main><!--Added forms for names and buttons -->
-            <h2>Customers details</h2>
-            <form action="">
-                Name: <input type="text" required placeholder="Xolani khambule" autocomplete="family-name"><br><br>
-                 Email: <input type="email" required placeholder="Xolanikhambule@gmail.com"><br><br>
-                 Service rating: <br>
-                 <input type="checkbox">***** (exellent)<br>
-                 <input type="checkbox">****(good)<br>
-                 <input type="checkbox">***(moderate) <br>
-                 <input type="checkbox">**(poor) <br>
-                 <input type="checkbox">*(very poor) <br>
-                <textarea placeholder="Write your comment here..." required></textarea><br><br>
-                <button type="submit">Post </button>
-                <button type="reset">clear form</button>
-            </form>
-            <section class="contact">
+<main>
+
+<section class="review-container">
+
+    <h2>Leave a Review</h2>
+
+    <form id="reviewForm">
+
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label>Rating</label>
+        <div class="rating">
+            <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+            <label><input type="radio" name="rating" value="1"> ⭐</label>
+        </div>
+
+        <label>Comment</label>
+        <textarea id="comment" placeholder="Write your feedback..." required></textarea>
+
+        <button type="submit">Post Review</button>
+        <button type="reset">Clear</button>
+
+        <p id="message"></p>
+
+    </form>
+
+</section>
+
+<section class="contact">
     <h2>Contact Us</h2>
-    <p>For more information or any enquiry and even complaints here is our contact information.</p>
-    <p> Phone: 081 319 5203</p>
+
+    <p>Phone: 081 319 5203</p>
     <p>Email: secondwavemobile@gmail.com</p>
 
-    <h3>Follow Us</h3><!--Added links so customers can check our pages out-->
-    <a href="https://www.facebook.com/xolani.xman.334839">Facebook</a><br>
-    <a href="https://www.instagram.com/_.breezy?igsh=OHFsbHA4cWNwbmU3">Instagram</a><br>
-    <a href="https://x.com/">Twitter</a>
-        </main>
-        
-         
-        <!-- FOOTER -->
-          <hr>
-         
-    <footer>
-        
-         <center>
+    <h3>Follow Us</h3>
 
-            <p>Copyright &copy; 2026 - &amp;Developed by  <b>Xolani khambule</b></p>
-            <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
-        </center>
-    </footer>
+    <a href="https://www.facebook.com/xolani.xman.334839">Facebook</a><br>
+    <a href="https://www.instagram.com/_.breezy">Instagram</a><br>
+    <a href="https://x.com/">Twitter</a><br>
+    <h3>For Enquies click the link below</h3>
+     <a href="Enquiry.html">Equiries</a>
+
+    <!-- =========================
+     STORE LOCATOR (GOOGLE MAPS)
+========================= -->
+
+<section class="content">
+    <h2>Find Our Store</h2>
+    <p>Visit us at our physical store location below:</p>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.7131!2d28.0436!3d-26.2041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95b1b8c1c1c1c1%3A0x0!2sJohannesburg!5e0!3m2!1sen!2sza!4v0000000000"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+</section>
+
+</main>
+
+<hr>
+
+<footer>
+    <center>
+        <p>Copyright &copy; 2026 - Developed by <b>Xolani Khambule</b></p>
+        <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
+    </center>
+</footer>
+
+
+
 </body>
 </html>

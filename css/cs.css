@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+/* Focus effect */
+input:focus, textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+    transform: scale(1.02);
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+}
+
+/* Message */
+#message-box {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ================= LOADER ================= */
+
+.loader {
+    margin: 15px auto;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #ddd;
+    border-top: 5px solid #4a90e2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .card {
+        margin: 20px;
+        padding: 20px;
+    }
+}

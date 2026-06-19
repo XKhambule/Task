@@ -6,19 +6,21 @@
     <title>Production and services</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-     <header class="main-header"><!--Added a logo-->
+
+<header class="main-header">
     <img src="images and assets/batman.png" alt="Second Wave Mobile Logo" class="logo">
 
-    <h1>Production and services</h1><!--added heading-->
+    <h1>Production and services</h1>
 
     <!-- SEARCH BAR -->
     <div class="search-bar">
         <input type="text" placeholder="Search phones..." id="searchinput">
     </div>
 
-    <nav><!--navigations-->
-        <a href="Homepage.html">Home</a>
+    <nav>
+        <a href="Index.html">Home</a>
         <a href="Aboutus.html">About Us</a>
         <a href="Specialdeals.html">Special Deals</a>
         <a href="Productionandservices.html">Production and services</a>
@@ -26,119 +28,123 @@
     </nav>
 </header>
 
-        <hr>
-        <main>
-        <section class="Products">
-    <h2> Our Products</h2>
-<!--Added image,heading,paragraph and links-->
+<hr>
+
+<main>
+
+<section class="Products">
+    <h2>Our Products</h2>
+
     <div class="gallery">
 
         <div class="card">
             <img src="images and assets/Z flip.jpeg" alt="Samsung Z Flip">
             <h3>Samsung Z Flip</h3>
             <p class="price">R9 000</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('Samsung Z Flip', 9000)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/13.jpeg" alt="iPhone 13">
             <h3>iPhone 13</h3>
             <p class="price">R6 600</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('iPhone 13', 6600)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/iphine 12.jpeg" alt="iPhone 12">
             <h3>iPhone 12</h3>
             <p class="price">R5 499</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('iPhone 12', 5499)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/iphone 11.jpeg" alt="iPhone 11">
             <h3>iPhone 11</h3>
             <p class="price">R4 500</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('iPhone 11', 4500)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/Iphone 15.jpeg" alt="iPhone 15">
             <h3>iPhone 15</h3>
             <p class="price">R10 500</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('iPhone 15', 10500)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/Iphone 16 plus.jpeg" alt="iPhone 16">
             <h3>iPhone 16</h3>
             <p class="price">R13 300</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('iPhone 16', 13300)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/iphone17.jpeg" alt="iPhone 17">
             <h3>iPhone 17</h3>
             <p class="price">R15 200</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('iPhone 17', 15200)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/25.jpeg" alt="Samsung S25 Ultra">
             <h3>Samsung S25 Ultra</h3>
             <p class="price">R12 400</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('Samsung S25 Ultra', 12400)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/26.jpeg" alt="Samsung S26">
             <h3>Samsung S26</h3>
             <p class="price">R14 200</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('Samsung S26', 14200)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/Honor x9c.jpeg" alt="Honor X9C">
             <h3>Honor X9C</h3>
             <p class="price">R5 200</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('Honor X9C', 5200)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/Mac book air.jpeg" alt="MacBook Air">
             <h3>MacBook Air</h3>
             <p class="price">R10 200</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('MacBook Air', 10200)">Add to Cart</a>
         </div>
 
         <div class="card">
             <img src="images and assets/mac book neo.jpeg" alt="MacBook Neo">
             <h3>MacBook Neo</h3>
             <p class="price">R11 200</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="CART.html" class="btn" onclick="addToCart('MacBook Neo', 11200)">Add to Cart</a>
         </div>
 
     </div>
 </section>
 
+<!-- LIST -->
+<ul id="itemList">
+    <li>Iphone</li>
+    <li>Samsung</li>
+    <li>Mac books</li>
+    <li>Other phones</li>
+</ul>
 
+</main>
 
-         <!--created a list-->
-            <ul id="itemList">
-                <li>Iphone</li>
-                <li>samsung</li>
-                <li>Mac books</li>
-                <li>other phones</li>
-            </ul>
-            </main>
-            <hr>
-             <!-- FOOTER -->
-    <footer>
-       
-         <center>
-            <p>Copyright &copy; 2026 - &amp;Developed by  <b>Xolani khambule</b></p>
-             <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
-        </center>
-    </footer>
-    
+<hr>
+
+<footer>
+    <center>
+        <p>Copyright &copy; 2026 - &amp;Developed by <b>Xolani Khambule</b></p>
+        <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
+    </center>
+</footer>
+
+<!-- ✅ CART SCRIPT -->
+<script src="js/cart.js"></script>
+
 </body>
 </html>

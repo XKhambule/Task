@@ -3,106 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special deals</title>
+    <title>Special Deals</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
+
 <body>
-     <header class="main-header">
+
+<header class="main-header">
     <img src="images and assets/batman.png" alt="Second Wave Mobile Logo" class="logo">
 
-    <h1>Special deals</h1>
+    <h1>Special Deals</h1>
 
-    <!-- SEARCH BAR -->
     <div class="search-bar">
         <input type="text" placeholder="Search phones...">
     </div>
 
     <nav>
-        <a href="Homepage.html">Home</a>
+        <a href="Index.html">Home</a>
         <a href="Aboutus.html">About Us</a>
         <a href="Specialdeals.html">Special Deals</a>
-        <a href="Productionandservices.html">Production and services</a>
-        <a href="Customerreview.html">Customer Reviews and contact us</a>
+        <a href="Productionandservices.html">Products</a>
+        <a href="Customerreview.html">Reviews</a>
+
+        <!-- CART ICON -->
+        <a href="CART.html" class="cart-icon">
+            🛒 Cart <span id="cart-count">0</span>
+        </a>
     </nav>
 </header>
-        <hr>
-        <main>
-        <section class="deals">
-    <h2> Special Deals</h2>
+
+<hr>
+
+<main>
+
+<section class="deals">
+    <h2>Special Deals</h2>
 
     <div class="gallery">
-        
-        <!-- Added the image, heading, paragraph tags and links -->
+
         <div class="item">
-            <img src="images and assets/iphone + watch.avif " alt="iPhone" >
+            <img src="images and assets/iphone + watch.avif" alt="iPhone Combo">
             <h3>iPhone Combo</h3>
             <p>iPhone + Smart Watch</p>
             <p class="price">R8 999</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="#" class="btn" onclick="addToCart('iPhone Combo', 8999)">Add to Cart</a>
         </div>
 
-        
         <div class="item">
-            <img src="images and assets/samsung and buds.webp" alt="Samsung Phone">
+            <img src="images and assets/samsung and buds.webp" alt="Samsung Combo">
             <h3>Samsung Combo</h3>
             <p>Samsung + Earbuds</p>
             <p class="price">R6 499</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="#" class="btn" onclick="addToCart('Samsung Combo', 6499)">Add to Cart</a>
         </div>
 
-        
         <div class="item">
-            <img src="images and assets/laptop.webp" alt="Laptop">
+            <img src="images and assets/laptop.webp" alt="Laptop Deal">
             <h3>Laptop Deal</h3>
             <p>Refurbished Laptop</p>
             <p class="price">R5 999</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="#" class="btn" onclick="addToCart('Laptop Deal', 5999)">Add to Cart</a>
         </div>
 
-        
         <div class="item">
             <img src="images and assets/watch.webp" alt="Smart Watch">
             <h3>Smart Watch</h3>
             <p>Fitness Smart Watch</p>
             <p class="price">R1 499</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="#" class="btn" onclick="addToCart('Smart Watch', 1499)">Add to Cart</a>
         </div>
 
-        
         <div class="item">
-            <img src="images and assets/iphone 11.jpeg" alt="iPhone">
+            <img src="images and assets/iphone 11.jpeg" alt="iPhone Budget">
             <h3>iPhone Budget</h3>
             <p>Pre-owned iPhone</p>
             <p class="price">R4 999</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="#" class="btn" onclick="addToCart('iPhone Budget', 4999)">Add to Cart</a>
         </div>
 
-        
         <div class="item">
-            <img src="images and assets/galaxy.webp" alt="Samsung">
+            <img src="images and assets/galaxy.webp" alt="Samsung Budget">
             <h3>Samsung Budget</h3>
             <p>Pre-owned Samsung</p>
             <p class="price">R3 999</p>
-            <a href="CART.html" class="btn">Add to Cart</a>
+            <a href="#" class="btn" onclick="addToCart('Samsung Budget', 3999)">Add to Cart</a>
         </div>
 
     </div>
 </section>
 
-<style>
-
-</style>
 </main>
+
 <hr>
-   <!-- FOOTER -->
-    <footer>
-       
-         <center><!--i aligned it to centre-->
-            <p>Copyright &copy; 2026 - &amp;Developed by  <b>Xolani khambule</b></p>
-             <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
-        </center>
-    </footer>
-    
+
+<footer>
+    <center>
+        <p>Copyright &copy; 2026 - Developed by <b>Xolani Khambule</b></p>
+        <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
+    </center>
+</footer>
+
+<!-- CART JS -->
+<script src="js/cart.js"></script>
+
 </body>
 </html>

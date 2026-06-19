@@ -3,36 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CART</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/cs.css">
 </head>
+
 <body>
-      <header class="main-header">
+
+<header class="main-header">
     <img src="images and assets/batman.png" alt="Second Wave Mobile Logo" class="logo">
 
-    <h1>CART</h1>
+    <h1>Your Shopping Cart</h1>
 
-    <!-- SEARCH BAR -->
     <div class="search-bar">
         <input type="text" placeholder="Search phones...">
     </div>
 
     <nav>
-        <a href="Homepage.html">Home</a>
+        <a href="Index.html">Home</a>
         <a href="Specialdeals.html">Special Deals</a>
-        <a href="Productionandservices.html">Production and services</a>
-        <a href="Customerreview.html">Customer Reviews</a>
+        <a href="Productionandservices.html">Products</a>
+        <a href="Customerreview.html">Reviews</a>
+
+        <!-- CART ICON -->
+        <a href="CART.html" class="cart-icon">
+            Cart <span id="cart-count">0</span>
+        </a>
     </nav>
 </header>
 
+<hr>
 
-        <hr>
-        <main>
+<main>
 
+<section class="cart-section">
 
+    <h2>Items in Your Cart</h2>
 
-            
-        </main>
+    <!-- CART ITEMS WILL LOAD HERE -->
+    <div id="cart-items"></div>
+
+    <!-- TOTAL DISPLAY -->
+    <div id="cart-total"></div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="cart-actions">
+        <a href="checkout.html">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </a>
+
+        <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+    </div>
+
+</section>
+
+</main>
+
+<hr>
+
+<footer>
+    <center>
+        <p>Copyright &copy; 2026 - Developed by <b>Xolani Khambule</b></p>
+        <p>© 2026 Second Wave Mobile | All Rights Reserved</p>
+    </center>
+</footer>
+
+<!-- CART JS FILE -->
+<script src="js/cart.js"></script>
+
 </body>
 </html>

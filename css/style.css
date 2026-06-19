@@ -1,3 +1,4 @@
+ css
                 /* Added the font-family */                                                      /* This is the Home page */
  body {
     margin: 0;
@@ -125,6 +126,100 @@ nav a {
 
 nav a:hover {
     color: #00A86B;
+}
+
+/*  CUSTOMER REVIEW PAGE */
+
+.review-container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.review-container h2 {
+    text-align: center;
+    color: #00A86B;
+}
+
+.review-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-container label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.review-container input,
+.review-container textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.review-container textarea {
+    resize: none;
+    height: 100px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.review-container button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.review-container button[type="submit"] {
+    background-color: #00A86B;
+    color: white;
+}
+
+.review-container button[type="submit"]:hover {
+    background-color: black;
+}
+
+.review-container button[type="reset"] {
+    background-color: #ccc;
+}
+
+.review-container button[type="reset"]:hover {
+    background-color: #999;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #00A86B;
+}
+
+/* CONTACT SECTION */
+.contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact a {
+    color: #00A86B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: black;
 }
 
 /* This is the special deals page */
@@ -507,6 +602,126 @@ nav a {
 }
 
 
+/* =========================
+   CHECKOUT PAGE STYLING
+========================= */
+
+.checkout-section {
+    width: 70%;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.checkout-section h2 {
+    color: #00A86B;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   RECEIPT ITEMS
+========================= */
+
+#receipt {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#receipt p {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* =========================
+   TOTAL BOX
+========================= */
+
+#total-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #00A86B;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.checkout-actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.checkout-actions button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Finish button */
+#finishBtn {
+    background: #00A86B;
+    color: white;
+}
+
+#finishBtn:hover {
+    background: black;
+}
+
+/* Clear button */
+#clearBtn {
+    background: #ff4d4d;
+    color: white;
+}
+
+#clearBtn:hover {
+    background: darkred;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 768px) {
+    .checkout-section {
+        width: 90%;
+    }
+
+    .checkout-actions {
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   GOOGLE MAPS SECTION
+========================= */
+
+.map-container {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.01);
+}
 
 /*
 
@@ -531,3 +746,4 @@ Benefits:
 - Improved performance
 
 */
+

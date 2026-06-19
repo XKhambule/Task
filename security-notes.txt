@@ -1,0 +1,11 @@
+Basic front-end security improvements included in these files:
+- Added stricter form constraints like maxlength and required fields.
+- Removed broken inline markup and invalid nesting that could cause rendering issues.
+- Added defer to script loading for cleaner page execution.
+- Added descriptive titles, meta descriptions, and structured data for SEO.
+
+Still needed on the hosting/backend side:
+- HTTPS enforcement
+- Server-side validation and sanitisation
+- Spam protection for forms
+- Security headers such as Content-Security-Policy and X-Frame-Options
