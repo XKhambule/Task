@@ -23,4 +23,15 @@ Tablet layout changes
 Respnsive image changes
 Css improvement
 
+Part 3
+Part 3 i added the enquiry html and checkout html and the and my home page html into index
+i implemented java script for a few codes to work for example the cart code where by client can select which ever mobiles they need and it could be saved into the cart code. My cart will have the element whereby  you can clear out the devices you have decided to purchase.The struggles i got where deploying netflify and making Java work.
+my part three was all about editting my codes like the customer review where i made a few changes  in css and also java
+reference:
+Mozilla Developer Network (MDN), 'HTML: HyperText Markup Language', available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 19 June 2026).
+Mozilla Developer Network (MDN), 'CSS: Cascading Style Sheets', available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 19 June 2026).
+Mozilla Developer Network (MDN), 'JavaScript Guide', available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide (Accessed: 19 June 2026).
+https://youtu.be/9KcqQq1Fgmk?si=F_Tf2pDSpcdcCLKu
+
+
 
